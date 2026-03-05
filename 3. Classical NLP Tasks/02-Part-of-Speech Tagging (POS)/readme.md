@@ -102,8 +102,95 @@ Modern NLP systems use neural networks such as:
 
 These models achieve higher accuracy by learning contextual information.
 
+
 ---
+
+
+## Understanding spaCy Token Attributes
+
+When working with Natural Language Processing using spaCy, each word in a sentence (called a **token**) has several useful attributes.
+
+The following code prints important information about each token:
+
+```python
+print(
+    word.text,
+    "=>",
+    word.pos_,
+    spacy.explain(word.pos_),
+    word.tag_,
+    spacy.explain(word.tag_)
+)
+```
+## 1. word.text
+
+Represents the original word exactly as it appears in the text.
+
+Example:
+
+Revenue
+
+This is simply the token itself.
+
+## 2. word.pos_ (Universal POS Tag)
+
+This represents the general grammatical category of the word.
+
+Examples:
+
+POS Tag	Meaning
+NOUN	Noun
+VERB	Verb
+ADJ	Adjective
+ADV	Adverb
+NUM	Number
+PROPN	Proper noun
+
+Example:
+
+Revenue → NOUN
+## 3. spacy.explain(word.pos_)
+
+This provides a text explanation of the POS tag.
+
+Example:
+
+NOUN → noun
+VERB → verb
+ADJ → adjective
+
+It simply converts the tag into a readable explanation.
+
+## 4. word.tag_ (Detailed POS Tag)
+
+This represents a more specific grammatical tag than pos_.
+
+Examples:
+
+Tag	Meaning
+NN	Noun, singular
+NNS	Noun, plural
+VBD	Verb, past tense
+VBG	Verb, gerund
+JJ	Adjective
+
+Example:
+
+increased
+pos_ = VERB
+tag_ = VBD
+## 5. spacy.explain(word.tag_)
+
+This provides a detailed explanation of the fine-grained tag.
+
+Example:
+
+VBD → verb, past tense
+NN → noun, singular
+NNS → noun, plural
 
 
 
 Part-of-Speech Tagging helps NLP systems understand the grammatical structure of sentences by identifying the role of each word. It is an essential preprocessing step for many advanced NLP applications.
+
+
