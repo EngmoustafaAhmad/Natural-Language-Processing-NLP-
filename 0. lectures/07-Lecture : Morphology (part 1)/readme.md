@@ -44,7 +44,7 @@ Morphology studies how words are constructed from smaller units:
 ## 🔄 Types of Morphology
 
 ### 1️⃣ Inflectional Morphology
-- Does **NOT change word class**
+- Does **NOT change word class** ( Part of speech )
 - Adds grammatical meaning
 
 #### Examples:
