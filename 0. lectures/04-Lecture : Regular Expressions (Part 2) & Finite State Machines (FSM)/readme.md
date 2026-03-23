@@ -17,17 +17,23 @@ a|b|c
 ```
 
 ✅ Equivalent:
+
 [abc]
+
 🧪 Examples:
+```
 hello|Hello
 a+|b+
 ab+|ba+
+```
 🧩 Grouping with Parentheses ( )
+
 📌 Why?
 
 To control how disjunction applies.
-
+```
 /(Column[0-9]+ *)*/
+```
 💡 Meaning:
 "Column" followed by digits
 Optional spaces
@@ -37,13 +43,22 @@ Repeated multiple times
 
 ❌ Wrong (false positives):
 
+```
 /\b[cd][ao][tg]\b/
+```
 
 ✔️ Correct:
 
+```
 /\b(cat|dog)\b/
+```
+
 2️⃣ Match "guppy" and "guppies"
+
+```
 /\bgupp(y|ies)\b/
+```
+
 ⚓ Anchors
 📌 Start of line ^
 /^The/
@@ -51,7 +66,10 @@ Repeated multiple times
 Matches "The" only at the beginning
 
 📌 End of line $
+
+```
 /The dog\.$/
+```
 
 Matches:
 
@@ -67,7 +85,9 @@ Disjunction (|)
 ✔️ Matches: theeee
 ❌ Not: thethe
 
+```
 /the|any/
+```
 
 ✔️ Matches: the or any
 
@@ -80,9 +100,17 @@ Disjunction (|)
 /sun(ε|day|rise|set)/
 ❓ MCQ Concepts
 ✔️ Letter "b" as second character:
+
+```
 /[a-z]b[a-z]*/
+```
+
 ✔️ Pattern:
+
+```
 /[Cc]ats?/
+```
+
 ✅ Matches:
 cat
 cats
@@ -144,12 +172,17 @@ be[ls]t
 
 Matches: belt, best
 
+```
 be[l-o]t
+```
 
 Matches: belt, bemt, bent, beot
 
 ❌ Negation
+
+```
 be[^0-9]t
+```
 
 Matches any non-digit in middle
 
@@ -158,7 +191,9 @@ fo*ot
 
 Matches: fot, foot, foooooot
 
+```
 go{2,3}gle
+```
 
 Matches: google, gooogle
 
@@ -185,4 +220,3 @@ Jurafsky & Martin — Speech and Language Processing
 
 ---
 
-لو عايز أحول لك كل المحاضرات لحد دلوقتي إلى **GitHub Repo كامل (README رئيسي + فولدر لكل Lecture + تنظيم احترافي)** قولي وهنعمله level production 🔥
