@@ -62,3 +62,173 @@ Combining characters in sequence.
 
 ```regex
 /wood/
+```
+Matches:
+
+wood
+firewood
+wooden
+🔀 Disjunction (OR)
+
+Using square brackets [ ]
+
+/[wW]/
+
+Matches:
+
+w
+W
+🔢 Ranges:
+/[A-Z]/
+
+Matches any uppercase letter.
+
+❌ Negation
+/[^a]/
+
+Matches:
+
+Any character except "a"
+🔁 Repetition Operators
+Operator	Meaning
+?	0 or 1
+*	0 or more
++	1 or more
+Examples:
+/o*/     → "", o, oo, ooo
+/o+/     → o, oo, ooo
+/oo+h!/  → ooh!, oooh!
+🌟 Wildcard Operator
+/.
+Matches any single character
+
+Example:
+
+/be.t/
+
+Matches:
+
+best
+belt
+beet
+be9t
+🔢 Quantifiers { }
+Pattern	Meaning
+\d{3}	Exactly 3 digits
+\d{3,}	3 or more digits
+\d{3,5}	Between 3 and 5 digits
+🔐 Escape Sequences
+
+Used to match special characters or predefined sets:
+
+Pattern	Meaning
+\d	Digit [0-9]
+\D	Non-digit
+\w	Alphanumeric
+\W	Non-alphanumeric
+\s	Whitespace
+\S	Non-whitespace
+🔚 Word Boundary
+/\bword\b/
+
+Matches:
+
+word
+
+Does NOT match:
+
+sword
+words
+🧪 Examples
+🐑 Sheep Language
+
+Strings:
+
+baa!
+baaa!
+baaaa!
+
+Regex:
+
+/baa+!/
+🔢 Digits
+/[0-9]+/
+
+Matches:
+
+1
+123
+99999
+📝 Matching the Word "the"
+
+❌ Wrong:
+
+/the/
+
+❌ Still wrong:
+
+/[tT]he/
+
+✅ Correct:
+
+/\b[tT]he\b/
+⚠️ False Positives vs False Negatives
+❌ False Positive
+
+Matching something we should NOT match
+
+Example:
+
+Matching "other" when searching for "the"
+❌ False Negative
+
+Missing something we should match
+
+Example:
+
+Missing "The"
+
+🎯 Goal:
+
+Minimize both errors for better accuracy
+
+🧠 Key Takeaways
+
+Regex is essential for text processing in NLP
+It defines patterns and languages
+
+Supports:
+
+Matching
+
+Searching
+
+Validation
+
+Important operators:
+
+[], *, +, ?, {}, .
+
+Balancing accuracy vs coverage is crucial
+
+🚀 Applications in NLP
+
+Information Extraction
+
+Text Cleaning & Preprocessing
+
+Tokenization
+
+Data Validation
+
+Log Analysis
+
+📚 References
+
+Jurafsky & Martin — Speech and Language Processing
+
+Python re Documentation
+
+
+---
+
