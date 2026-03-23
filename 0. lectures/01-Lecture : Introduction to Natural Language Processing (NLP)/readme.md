@@ -42,17 +42,17 @@ Language is analyzed in multiple levels:
 
 Level	Description	Example
 
-Phonetics	Sounds of language	speech signals
+**Phonetics**	Sounds of language	speech signals
 
-Morphology	Word structure	cats = cat + s
+**Morphology**	Word structure	cats = cat + s
 
-Syntax	Sentence structure	Subject + Verb + Object
+**Syntax**	Sentence structure	Subject + Verb + Object
 
-Semantics	Meaning	word meaning
+**Semantics**	Meaning	word meaning
 
-Pragmatics	Meaning in context	depends on situation
+**Pragmatics**	Meaning in context	depends on situation
 
-Discourse	Sentence relationships	conversation flow
+**Discourse**	Sentence relationships	conversation flow
 
 ## Syntax vs Semantics vs Pragmatics
 
