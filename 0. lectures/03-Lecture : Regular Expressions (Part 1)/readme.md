@@ -87,7 +87,10 @@ W
 Matches any uppercase letter.
 
 ❌ Negation
+
+```
 /[^a]/
+```
 
 Matches:
 
@@ -111,7 +114,9 @@ Examples:
 
 🌟 Wildcard Operator
 
+```
 /.
+```
 
 Matches any single character
 
@@ -137,13 +142,15 @@ Pattern	Meaning
 Used to match special characters or predefined sets:
 
 Pattern	Meaning
-\d	Digit [0-9]
-\D	Non-digit
-\w	Alphanumeric
-\W	Non-alphanumeric
-\s	Whitespace
-\S	Non-whitespace
+```\d```	Digit [0-9]
+```\D```	Non-digit
+```\w```	Alphanumeric
+```\W```	Non-alphanumeric
+```\s```	Whitespace
+```\S```	Non-whitespace
+
 🔚 Word Boundary
+
 /\bword\b/
 
 Matches:
@@ -153,6 +160,7 @@ word
 Does NOT match:
 
 sword
+
 words
 🧪 Examples
 🐑 Sheep Language
@@ -167,27 +175,41 @@ Regex:
 
 /baa+!/
 ## 🔢 Digits
+
+```
 /[0-9]+/
+```
 
 Matches:
 
 1
+
 123
+
 99999
+
 📝 Matching the Word "the"
 
 ❌ Wrong:
 
+```
 /the/
+```
 
 ❌ Still wrong:
 
+```
 /[tT]he/
+```
 
 ✅ Correct:
 
+```
 /\b[tT]he\b/
+```
+
 ⚠️ False Positives vs False Negatives
+
 ❌ False Positive
 
 Matching something we should NOT match
@@ -195,6 +217,7 @@ Matching something we should NOT match
 Example:
 
 Matching "other" when searching for "the"
+
 ❌ False Negative
 
 Missing something we should match
@@ -203,13 +226,14 @@ Example:
 
 Missing "The"
 
-🎯 Goal:
+## Goal:
 
 Minimize both errors for better accuracy
 
-🧠 Key Takeaways
+## Key Takeaways
 
 Regex is essential for text processing in NLP
+
 It defines patterns and languages
 
 Supports:
@@ -226,7 +250,7 @@ Important operators:
 
 Balancing accuracy vs coverage is crucial
 
-🚀 Applications in NLP
+## Applications in NLP
 
 Information Extraction
 
@@ -238,11 +262,6 @@ Data Validation
 
 Log Analysis
 
-📚 References
-
-Jurafsky & Martin — Speech and Language Processing
-
-Python re Documentation
 
 
 ---
