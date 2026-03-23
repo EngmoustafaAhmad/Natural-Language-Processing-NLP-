@@ -78,66 +78,105 @@ Adjective → back door
 
 Ambiguity is a core challenge in NLP.
 
+
 Types:
+
 Lexical Ambiguity → word has multiple meanings
+
 Syntactic Ambiguity → multiple sentence structures
+
 Semantic Ambiguity → unclear meaning
+
 🎯 Example:
+
 I made her duck
+
 Possible meanings:
+
 Cooked duck for her
+
 Cooked her duck
+
 Created a duck
+
 Made her lower her head
+
 Transformed her into a duck 😅
 
 ## Cause:
 
 Word ambiguity (duck, her)
+
 Verb ambiguity (make)
+
 ## Alphabet (∑)
 
 An alphabet is a finite set of symbols.
 
 Examples:
+
 Binary → {0,1}
+
 Letters → {a–z}
+
 Alphanumeric → {a–z, A–Z, 0–9}
+
 ## Strings
 
 A string is a sequence of symbols from an alphabet.
 
 Key Concepts:
+
 Length → |w|
+
 Empty string → ε
+
 Concatenation → xy
+
 Sets:
+
 ∑* → all possible strings
+
 ∑+ → all non-empty strings
+
 ## 🌐 Language
 
 A language is a set of strings.
 
 Definition:
+
 L ⊆ ∑*
+
 Examples:
+
 Equal number of 0s and 1s
+
 n zeros followed by n ones
+
 ❓ Membership Problem
+
 Problem:
 
 Determine if a string belongs to a language.
 
 Example:
+
 w = 100011
+
 Language: equal number of 0s and 1s
+
 ✔ Yes
+
 🧱 The Chomsky Hierarchy
 
 A classification of formal languages:
 
 Type	Machine
+
 Regular	Finite Automata (DFA/NFA)
+
 Context-Free	Pushdown Automata (PDA)
+
 Context-Sensitive	Linear Bounded Automata (LBA)
+
 Recursively Enumerable	Turing Machine (TM)
