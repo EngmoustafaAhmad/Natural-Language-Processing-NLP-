@@ -3,7 +3,7 @@
 Course: Natural Language Processing
 Focus: Lexicon, POS Tagging, Ambiguity, Formal Language Theory
 
-📌 Overview
+## 📌 Overview
 
 This lecture introduces core NLP foundations including:
 
@@ -13,15 +13,15 @@ POS Tagging
 Ambiguity in language
 Formal language concepts
 Chomsky Hierarchy
-📚 Lexicon
+## Lexicon
 
 A Lexicon is a repository of words in a language.
 
-🔹 Includes:
+### 🔹 Includes:
 Words (stems)
 Affixes
 Linguistic information (e.g., noun, verb)
-📌 Notes:
+### 📌 Notes:
 Varies across domains (e.g., medical, technical)
 Words are grouped into categories
 Examples:
@@ -29,32 +29,32 @@ Noun
 Verb
 Adjective
 Preposition
-🏷️ Part of Speech (POS)
+## 🏷️ Part of Speech (POS)
 
 POS represents grammatical categories of words.
 
-🔹 Common POS Tags:
+### 🔹 Common POS Tags:
 Noun (NN)
 Verb (VB)
 Adjective (JJ)
 Adverb (RB)
 Determiner (DET)
 Preposition (P)
-💡 Importance:
+### 💡 Importance:
 Helps understand sentence structure
 Essential for syntactic analysis
-⚙️ Part of Speech Tagging
-📌 Definition:
+## Part of Speech Tagging
+### 📌 Definition:
 
 Assigning a POS tag to each word in a sentence.
 
 Example:
 Input:  Time flies like an arrow
 Output: Time/NN flies/VB like/P an/DET arrow/NN
-🧠 Why Important?
+### Why Important?
 First step in NLP pipelines
 Required for parsing and understanding
-⚠️ Ambiguous Words
+### Ambiguous Words
 
 Some words have multiple POS or meanings.
 
@@ -70,11 +70,11 @@ back
 Noun → on my back
 Verb → back the project
 Adjective → back door
-💡 Solution:
+### Solution:
 
 ➡️ Use context to determine the correct meaning
 
-🔀 Ambiguity in NLP
+## Ambiguity in NLP
 
 Ambiguity is a core challenge in NLP.
 
@@ -91,11 +91,11 @@ Created a duck
 Made her lower her head
 Transformed her into a duck 😅
 
-➡️ Cause:
+## Cause:
 
 Word ambiguity (duck, her)
 Verb ambiguity (make)
-🔤 Alphabet (∑)
+## Alphabet (∑)
 
 An alphabet is a finite set of symbols.
 
@@ -103,7 +103,7 @@ Examples:
 Binary → {0,1}
 Letters → {a–z}
 Alphanumeric → {a–z, A–Z, 0–9}
-🔡 Strings
+## Strings
 
 A string is a sequence of symbols from an alphabet.
 
@@ -114,7 +114,7 @@ Concatenation → xy
 Sets:
 ∑* → all possible strings
 ∑+ → all non-empty strings
-🌐 Language
+## 🌐 Language
 
 A language is a set of strings.
 
