@@ -82,7 +82,10 @@ Matches:
 w
 W
 ## 🔢 Ranges:
+
+```
 /[A-Z]/
+```
 
 Matches any uppercase letter.
 
@@ -134,9 +137,13 @@ beet
 be9t
 ## 🔢 Quantifiers { }
 Pattern	Meaning
+
 \d{3}	Exactly 3 digits
+
 \d{3,}	3 or more digits
+
 \d{3,5}	Between 3 and 5 digits
+
 🔐 Escape Sequences
 
 Used to match special characters or predefined sets:
@@ -151,7 +158,9 @@ Pattern	Meaning
 
 🔚 Word Boundary
 
+```
 /\bword\b/
+```
 
 Matches:
 
@@ -173,7 +182,10 @@ baaaa!
 
 Regex:
 
+```
 /baa+!/
+```
+
 ## 🔢 Digits
 
 ```
