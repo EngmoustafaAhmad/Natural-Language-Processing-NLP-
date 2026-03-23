@@ -68,17 +68,20 @@ Matches:
 wood
 firewood
 wooden
-🔀 Disjunction (OR)
+
+## 🔀 Disjunction (OR)
 
 Using square brackets [ ]
 
+```
 /[wW]/
+```
 
 Matches:
 
 w
 W
-🔢 Ranges:
+## 🔢 Ranges:
 /[A-Z]/
 
 Matches any uppercase letter.
@@ -89,22 +92,34 @@ Matches any uppercase letter.
 Matches:
 
 Any character except "a"
-🔁 Repetition Operators
+## 🔁 Repetition Operators
 Operator	Meaning
+
 ?	0 or 1
+
 *	0 or more
+
 +	1 or more
+
 Examples:
+
 /o*/     → "", o, oo, ooo
+
 /o+/     → o, oo, ooo
+
 /oo+h!/  → ooh!, oooh!
+
 🌟 Wildcard Operator
+
 /.
+
 Matches any single character
 
 Example:
 
+```
 /be.t/
+```
 
 Matches:
 
@@ -112,7 +127,7 @@ best
 belt
 beet
 be9t
-🔢 Quantifiers { }
+## 🔢 Quantifiers { }
 Pattern	Meaning
 \d{3}	Exactly 3 digits
 \d{3,}	3 or more digits
@@ -151,7 +166,7 @@ baaaa!
 Regex:
 
 /baa+!/
-🔢 Digits
+## 🔢 Digits
 /[0-9]+/
 
 Matches:
