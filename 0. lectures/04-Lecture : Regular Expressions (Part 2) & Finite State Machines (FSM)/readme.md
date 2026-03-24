@@ -35,10 +35,15 @@ To control how disjunction applies.
 /(Column[0-9]+ *)*/
 ```
 💡 Meaning:
+
 "Column" followed by digits
+
 Optional spaces
+
 Repeated multiple times
+
 🧪 Examples
+
 1️⃣ Match "cat" or "dog"
 
 ❌ Wrong (false positives):
@@ -60,7 +65,9 @@ Repeated multiple times
 ```
 
 ⚓ Anchors
+
 📌 Start of line ^
+
 /^The/
 
 Matches "The" only at the beginning
@@ -74,15 +81,25 @@ Matches "The" only at the beginning
 Matches:
 
 "The dog." only
+
 ⚠️ Operator Precedence
+
 🔝 Order (High → Low):
+
 Quantifiers (*, +, ?, {})
+
 Concatenation
+
 Disjunction (|)
+
 🧪 Examples:
+
+```
 /the*/
+```
 
 ✔️ Matches: theeee
+
 ❌ Not: thethe
 
 ```
@@ -92,13 +109,27 @@ Disjunction (|)
 ✔️ Matches: the or any
 
 🧪 Practice Examples
-{lass, class, glass}
+
+```
 /[cg]?lass/
-{jet, pet, net}
+```
+
+{lass, class, glass}
+
+```
 /[jpn]et/
-{sun, sunday, sunrise, sunset}
+```
+
+{jet, pet, net}
+
+```
 /sun(ε|day|rise|set)/
+```
+
+{sun, sunday, sunrise, sunset}
+
 ❓ MCQ Concepts
+
 ✔️ Letter "b" as second character:
 
 ```
@@ -112,62 +143,110 @@ Disjunction (|)
 ```
 
 ✅ Matches:
+
 cat
+
 cats
+
 Cat
+
 Cats
+
 🧠 Formalisms
+
 📌 3 Ways to Represent Languages
+
 Regular Expressions
+
 Text patterns
+
 Finite State Automata (FSA)
+
 Graph representation
+
 Regular Grammars
+
 Rule-based
+
 🔄 Finite State Machines (FSM)
+
 📌 What is FSM?
+
 A machine used to recognize patterns (languages)
+
 Works using states and transitions
+
 🧩 Finite State Automata (FSA)
+
 📌 Definition
+
 Recognizes Regular Languages
+
 Represented as a graph
+
 🔧 Components of DFA
+
 
 A DFA is defined as:
 
 { Q , Σ , q0 , F , δ }
+
 🧱 Meaning:
+
 Symbol	Description
+
 Q	Set of states
+
 Σ	Input alphabet
+
 q0	Start state
+
 F	Accept states
+
 δ	Transition function
+
 🔄 How DFA Works
+
 📥 Input:
+
+
 
 String w
 
+
 ⚙️ Steps:
+
 Start at q0
+
 Read input symbol by symbol
+
 Move between states using δ
+
 If final state ∈ F → ✅ Accept
+
 Otherwise → ❌ Reject
+
 🔀 Types of FSA
+
 1️⃣ Deterministic (DFA)
+
 Only one state at a time
+
 2️⃣ Non-Deterministic (NFA)
+
 Multiple possible states
+
 🧠 Key Concept
+
 
 If a language is recognized by DFA:
 
 👉 It is a Regular Language
 
 🧪 Regex Practice (Extra)
+
 🎯 Character Classes
+
 be[ls]t
 
 Matches: belt, best
@@ -198,24 +277,43 @@ go{2,3}gle
 Matches: google, gooogle
 
 🌟 Meta Characters
+
 Symbol	Meaning
+
 .	Any character
+
 []	Set
+
 [^]	Negation
+
 -	Range
+
 🧠 Key Takeaways
+
 Regex defines patterns for text
+
 Parentheses control grouping
+
 Anchors define position
+
 FSM models language recognition
+
 DFA = deterministic, NFA = flexible
+
 🚀 Applications
+
 Text processing
+
 NLP preprocessing
+
 Search engines
+
 Compilers
+
 Spell checking
+
 📚 References
+
 Jurafsky & Martin — Speech and Language Processing
 
 ---
