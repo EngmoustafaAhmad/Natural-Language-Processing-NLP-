@@ -11,9 +11,9 @@ The system automatically classifies emails into categories such as:
 
 ---
 
-## 🚀 Project Link
+## 🚀 DAtaset Link download
 
-🔗 [View Project Repository](PUT_YOUR_LINK_HERE)
+🔗 [View Project Repository](https://www.kaggle.com/datasets/satyajeetbedi/email-hamspam-dataset?resource=download)
 
 ---
 
