@@ -13,7 +13,7 @@ The system automatically classifies emails into categories such as:
 
 ## 🚀 DAtaset Link download
 
-🔗 [View Project Repository](https://www.kaggle.com/datasets/satyajeetbedi/email-hamspam-dataset?resource=download)
+🔗 [download dataset](https://www.kaggle.com/datasets/satyajeetbedi/email-hamspam-dataset?resource=download)
 
 ---
 
