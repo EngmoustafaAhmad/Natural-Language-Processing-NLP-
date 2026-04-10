@@ -4,7 +4,7 @@ This project is a Machine Learning model that classifies emails as **Spam** or *
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 The goal of this project is to detect whether an email message is:
 - **Spam (0)** → unwanted or promotional messages
@@ -17,7 +17,7 @@ We use:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains two columns:
 - `Status` → label (ham / spam)
@@ -29,7 +29,7 @@ After preprocessing:
 
 ---
 
-## 🧠 Machine Learning Models
+##  Machine Learning Models
 
 ### 1. Naive Bayes
 A probabilistic model based on Bayes theorem:
@@ -43,7 +43,7 @@ A linear classification model:
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 1. Load dataset
 2. Clean missing values
@@ -56,9 +56,9 @@ A linear classification model:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
-- Python 🐍
+- Python 
 - Pandas
 - NumPy
 - Scikit-learn
@@ -66,7 +66,7 @@ A linear classification model:
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 We evaluate models using:
 - Accuracy
@@ -77,7 +77,7 @@ We evaluate models using:
 
 ---
 
-## 📊 Results
+##  Results
 
 Both models are compared:
 
@@ -88,7 +88,7 @@ Both models are compared:
 
 ---
 
-## 🧪 Example Prediction
+##  Example Prediction
 
 ```python
 sample = ["Congratulations! You won a free ticket. Call now!"]
